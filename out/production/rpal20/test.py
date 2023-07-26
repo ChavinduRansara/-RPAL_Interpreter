@@ -7,7 +7,7 @@ def execute_rpal(filename):
         return "Not rpal program"
     try:
         # Replace 'rpal' with the actual command you want to execute
-        command = f'java rpal20 {filename}'
+        command = f'java Interpreter {filename}'
         result = subprocess.check_output(command, shell=True, text=True)
         return result.strip()
     except subprocess.CalledProcessError as e:

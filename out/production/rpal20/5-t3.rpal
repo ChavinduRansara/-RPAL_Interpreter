@@ -1,0 +1,11 @@
+let 
+	Remainder x y = x-(x/y)*y
+in
+	Print (Pal 1001) 
+where
+	Pal number = number eq numberRevised number -> 'Palindrom' | 'Not a Palindrom'
+where 
+	rec numberRevised number = number/10 eq 0 -> number | ((Remainder number 10)*Mul number + numberRevised(number/10))
+where
+	rec Mul number =number/10 eq 0 -> 1| 10*Mul(number/10)
+

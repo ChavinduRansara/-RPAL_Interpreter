@@ -1,0 +1,4 @@
+let 
+	Sign number = number ls 0 -> 'Negative' | 'Possitive'
+in
+	Print(Sign (10))

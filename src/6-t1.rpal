@@ -1,0 +1,16 @@
+let 
+	Remainder x y = x-(x/y)*y
+in let
+	Pal number = number eq numberRevised number -> 1 | 0
+where 
+	rec numberRevised number = number/10 eq 0 -> number | ((Remainder number 10)*Mul number + numberRevised(number/10))
+where
+	rec Mul number =number/10 eq 0 -> 1| 10*Mul(number/10)
+in let 
+	palindroms = nil
+in
+	print(Range(100, 200))
+where
+	rec Range (a,b) = a le b -> (Pal b eq 1 -> (Range(a, (b - 1)) aug b) | Range(a, (b - 1))) | palindroms
+
+

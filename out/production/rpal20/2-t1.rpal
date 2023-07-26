@@ -1,0 +1,10 @@
+let 
+	num1 = 5 and num2 = 10 and num3 = 3
+in let 
+	max1 num1 = num1 gr num2 ->  num1 | num2
+in let 
+	max num3 = num3 gr max1 num1 -> num3 | max1 num1
+in
+	print(max num3)
+
+

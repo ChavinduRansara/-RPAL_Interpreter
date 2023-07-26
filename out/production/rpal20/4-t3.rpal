@@ -1,0 +1,4 @@
+let 
+	rec Factorial num = num eq 1 -> 1 | num eq 0 -> 1 | num * Factorial (num-1)
+in
+	Print (Factorial 10)

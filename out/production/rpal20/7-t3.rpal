@@ -1,0 +1,6 @@
+let 
+	Remainder x y = x-(x/y)*y
+in let 
+	OddEven number = Remainder number 2 eq 0 -> 'Even' | 'Odd'
+in
+	Print(OddEven (-8))

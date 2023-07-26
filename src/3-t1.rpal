@@ -1,0 +1,7 @@
+Print(Answers(0,100))
+where
+	Answers (start,last)= (let rec List(Tup,number) = (FindFib number ge start-> (start le FindFib number & FindFib(number) gr last -> Tup | List(Tup aug FindFib number,number+1)) | List(nil,number+1)) 
+in 
+	List(nil,0))
+where 
+	rec FindFib number = number eq 0 or number eq 1 -> number|FindFib (number-1)+FindFib (number-2)

@@ -1,0 +1,4 @@
+let 
+	rec Sum x = x eq 1 -> 1 | x eq 0 -> 0 | x + Sum (x-1)
+in 
+	Print (Sum 10)
